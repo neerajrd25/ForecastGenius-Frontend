@@ -13,6 +13,7 @@ import { Feature, features } from '../feature-list.data';
 export class FeatureListComponent implements OnInit {
   routeAnimationsElements = ROUTE_ANIMATIONS_ELEMENTS;
   features: Feature[] = features;
+  underconstruction = require('../../../../assets/Under-Maintainance.png');
 
   ngOnInit() {}
 

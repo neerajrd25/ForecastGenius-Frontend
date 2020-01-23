@@ -4,34 +4,30 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'about',
+    redirectTo: 'demand-planning',
     pathMatch: 'full'
   },
   {
-    path: 'about',
+    path: 'demand-planning',
     loadChildren: () =>
       import('./features/about/about.module').then(m => m.AboutModule)
   },
   {
-    path: 'feature-list',
+    path: 'supply-planning',
     loadChildren: () =>
       import('./features/feature-list/feature-list.module').then(
         m => m.FeatureListModule
       )
   },
   {
-    path: 'settings',
+    path: 'pricing',
     loadChildren: () =>
       import('./features/settings/settings.module').then(m => m.SettingsModule)
   },
-  {
-    path: 'examples',
-    loadChildren: () =>
-      import('./features/examples/examples.module').then(m => m.ExamplesModule)
-  },
+
   {
     path: '**',
-    redirectTo: 'about'
+    redirectTo: 'demand-planning'
   }
 ];
 

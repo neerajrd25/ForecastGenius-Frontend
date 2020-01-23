@@ -56,3 +56,22 @@
   @include angular-material-theme($anms-nature-theme);
   @include custom-components-theme($anms-nature-theme);
 }
+
+.mat-button {
+  height: 50px;
+  width: 150px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 0px !important;
+}
+
+.default-theme mat-sidenav-container mat-toolbar button.active {
+  color: #16365c;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  background-color: white;
+}

@@ -19,11 +19,11 @@ const routes: Routes = [
     path: '',
     component: ExamplesComponent,
     children: [
-      {
-        path: '',
-        redirectTo: 'todos',
-        pathMatch: 'full'
-      },
+      // {
+      //   path: '',
+      //   redirectTo: 'todos',
+      //   pathMatch: 'full'
+      // },
       {
         path: 'todos',
         component: TodosContainerComponent,

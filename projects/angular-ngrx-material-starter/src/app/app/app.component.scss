@@ -8,7 +8,10 @@
 mat-sidenav-container {
   height: 100%;
   width: 100%;
-
+  .nav-left {
+    position: absolute;
+    right: 50px;
+  }
   .toolbar {
     position: fixed;
     width: 100%;
@@ -74,10 +77,12 @@ mat-sidenav-container {
 
     .content {
       flex: 1 0 auto;
-      margin-top: 64px;
+      margin-top: 30px;
       overflow: hidden;
     }
-
+    .daily-highlight-section {
+      margin-top: 5%;
+    }
     .footer {
       flex: 0 0 auto;
       padding: 0 15px;
